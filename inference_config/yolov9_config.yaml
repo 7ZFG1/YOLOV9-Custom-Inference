@@ -1,0 +1,18 @@
+weights: ""                       # Model ağırlığını girin
+data: ""                          # Boş kalabilir
+imgsz: 640                        # Imge giriş boyutu
+conf_thres: 0.2  
+iou_thres: 0.3 
+max_det: 2000
+device: '0'                       # cuda device, i.e. 0 or 0,1,2,3 or cpu
+view_img: False                   # show results
+draw_img: False
+save_img: False
+classes: [0,1,2,3,4,5,6,7,8] #["0","1","2","3","4","5","6","7","8"]
+agnostic_nms: True  # class-agnostic NMS
+multi_label: False
+augment: False  # augmented inference
+#visualize: False  # visualize features
+line_thickness: 3  # bounding box thickness (pixels)
+half: False  # use FP16 half-precision inference
+dnn: False  # use OpenCV DNN for ONNX inference
