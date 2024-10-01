@@ -130,10 +130,6 @@ class YOLOV9SegInference:
         if self._config["draw_img"]:
             org_image_copied = self._draw(org_image_copied, self.caption)
 
-            ##TODO Burayı sil
-            #cv2.imwrite("/home/kule23/Documents/test_imgs_kebot/new_lens/pred_"+image_name, org_image_copied)
-            ##
-
             if self._config["view_img"]:
                 cv2.imshow("pred", org_image_copied)
                 cv2.waitKey(0)
@@ -235,9 +231,7 @@ class YOLOV9SegInference:
 if __name__ == "__main__":
     ai_engine = YOLOV9SegInference()
 
-    #path = '/home/sysadmin/Desktop/AKTARILACAK/kebot_eski_yeni_kamera/Old/'
-    path = "/home/kule23/Documents/test_imgs_kebot"
-    path = "/home/kule23/Documents/test_imgs_kebot/new_lens"
+    path = ""
     dir = os.listdir(path)
 
     for image_name in dir:
