@@ -145,9 +145,9 @@ if __name__ == "__main__":
     import time
     engine = YOLOV9Inference()
 
-    image_path = "/home/zfg/Documents/KebotV2/TESTSET/1_CM_CALISMA/1 CM_V2/cropped_for_labeling_edited/SALAR_KHAFAJI/OC" #"/home/sysadmin/Documents/DATASETS/pre_op/images/test"
+    image_path = ""
     image_listdir = os.listdir(image_path)
-    save_path = "/media/kule23/UbuntuData/ZekiFurkan/KebotV2/Dataset/detection/new_lens_test/det_result/"
+    save_path = ""
 
     for fname in sorted(image_listdir):
         full_image_path = os.path.join(image_path, fname)
@@ -155,10 +155,6 @@ if __name__ == "__main__":
 
         if not type(image) == np.ndarray:
             continue
-
-        ####
-        #image_name = "VALERIO_MARIO_7_6.bmp"
-        #image = cv2.imread(image_path + "/" + image_name)
 
         s = time.time()
         result_dict = engine(image)
