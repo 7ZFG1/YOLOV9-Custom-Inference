@@ -1,5 +1,5 @@
-weights: /home/zfg/Documents/KebotV2/gelan-c-seg4/weights/best.pt
-data: "" #/media/kule23/UbuntuData/ZekiFurkan/BreastCancer/NewDataset_GRADE/YOLODataset/dataset.yaml
+weights: ""
+data: "" 
 imgsz: 640
 conf_thres: 0.2  #0.2
 iou_thres: 0.45 #0.45
